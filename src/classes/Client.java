@@ -3,10 +3,7 @@ package classes;
 import java.util.ArrayList;
 import java.util.List;
 
-import function.Rent;
-import function.RentType;
-import function.string;
-import function.var;
+
 
 public class Client {
 	
@@ -16,8 +13,7 @@ public class Client {
 	private int phone;
 	private int DNI;
 	private int age;
-	private List<Rental> items;
-    private float discount;
+   private float discount;
 	
     
     
@@ -59,6 +55,13 @@ public class Client {
 		this.age = age;
 	}
 	
+	public float getDiscount() {
+		return discount;
+	}
+	public void setDiscount(float discount) {
+		this.discount = discount;
+	}
+	
 	public Client(String firstName, String lastName, String adress, int phone, int DNI, int age)
     {
     	this.firstName = firstName;
@@ -68,32 +71,6 @@ public class Client {
     	this.DNI = DNI;
     	this.age = age;
     	this.discount = 0;
-    	this.items = new List<Rental>();
     }
-
-	/*
-	 public int add(float amount, float Discount, Rental type)
-     {
-		 int subTotal = 0;
-		 int Count = Count;
-		 
-         Rental item = new Rental();
-         items.add(item);
-
-         subTotal += item.SubTotal;
-
-         // Promotion
-         if (Count >= 3 && Count <= 5)
-         {
-             discount = Discount.family;
-         }
-         else
-         {
-             discount = 0;
-         }
-
-         return Count;
-}
-	*/
 
 }
