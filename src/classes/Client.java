@@ -73,4 +73,23 @@ public class Client {
     	this.discount = 0;
     }
 
+	public static void orderBike(int $hour, int $day, int $week ) {
+		int values[] = {};
+		float subTotal = 0 ;
+		int contador = 0;
+		
+		    for(int count = 0; count < values.length; count++){
+		    	if (values[count] == 5 || values[count] == 20|| values[count] == 60) {
+		    	 
+		    	 contador ++;
+		    	 subTotal += values[count];
+		        }		    
+		   }
+		    
+		    
+		
+		 System.out.println(subTotal);
+		 System.out.println(contador);		
+	}
+	
 }
